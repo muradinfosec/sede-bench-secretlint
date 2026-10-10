@@ -1,0 +1,85 @@
+{
+    "filePath": "[SNAPSHOT]/ng.secret/input.txt",
+    "messages": [
+        {
+
+            "range": [
+                77,
+                113
+            ],
+            "type": "message",
+            "ruleId": "@secretlint/secretlint-rule-databricks",
+            "ruleParentId": "@secretlint/secretlint-rule-preset-canary",
+            "loc": {
+                "start": {
+                    "line": 2,
+                    "column": 17
+                },
+                "end": {
+                    "line": 2,
+                    "column": 53
+                }
+            },
+            "severity": "error",
+            "messageId": "DATABRICKS_PERSONAL_ACCESS_TOKEN",
+            "docsUrl": "https://github.com/secretlint/secretlint/blob/master/packages/%40secretlint/secretlint-rule-databricks/README.md#DATABRICKS_PERSONAL_ACCESS_TOKEN",
+            "data": {
+
+            }
+        },
+        {
+
+            "range": [
+                123,
+                161
+            ],
+            "type": "message",
+            "ruleId": "@secretlint/secretlint-rule-databricks",
+            "ruleParentId": "@secretlint/secretlint-rule-preset-canary",
+            "loc": {
+                "start": {
+                    "line": 4,
+                    "column": 8
+                },
+                "end": {
+                    "line": 4,
+                    "column": 46
+                }
+            },
+            "severity": "error",
+            "messageId": "DATABRICKS_PERSONAL_ACCESS_TOKEN",
+            "docsUrl": "https://github.com/secretlint/secretlint/blob/master/packages/%40secretlint/secretlint-rule-databricks/README.md#DATABRICKS_PERSONAL_ACCESS_TOKEN",
+            "data": {
+
+            }
+        },
+        {
+
+            "range": [
+                182,
+                218
+            ],
+            "type": "message",
+            "ruleId": "@secretlint/secretlint-rule-databricks",
+            "ruleParentId": "@secretlint/secretlint-rule-preset-canary",
+            "loc": {
+                "start": {
+                    "line": 6,
+                    "column": 18
+                },
+                "end": {
+                    "line": 6,
+                    "column": 54
+                }
+            },
+            "severity": "error",
+            "messageId": "DATABRICKS_PERSONAL_ACCESS_TOKEN",
+            "docsUrl": "https://github.com/secretlint/secretlint/blob/master/packages/%40secretlint/secretlint-rule-databricks/README.md#DATABRICKS_PERSONAL_ACCESS_TOKEN",
+            "data": {
+
+            }
+        }
+    ],
+
+    "sourceContentType": "text"
+}

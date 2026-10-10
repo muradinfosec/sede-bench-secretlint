@@ -1,0 +1,6 @@
+# Databricks personal access tokens that should be detected
+
+
+
+
+

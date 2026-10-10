@@ -1,0 +1,10 @@
+# Cloudflare API tokens that should be detected
+
+# Account API Token (cfat_)
+
+
+# User API Token (cfut_)
+
+
+# Global API Key (cfk_)
+

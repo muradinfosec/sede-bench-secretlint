@@ -1,0 +1,111 @@
+{
+    "filePath": "[SNAPSHOT]/ng.secret/input.txt",
+    "messages": [
+        {
+
+            "range": [
+                118,
+                150
+            ],
+            "type": "message",
+            "ruleId": "@secretlint/secretlint-rule-stripe",
+            "ruleParentId": "@secretlint/secretlint-rule-preset-recommend",
+            "loc": {
+                "start": {
+                    "line": 5,
+                    "column": 18
+                },
+                "end": {
+                    "line": 5,
+                    "column": 50
+                }
+            },
+            "severity": "error",
+            "messageId": "STRIPE_SECRET_KEY_LIVE",
+            "docsUrl": "https://github.com/secretlint/secretlint/blob/master/packages/%40secretlint/secretlint-rule-stripe/README.md#STRIPE_SECRET_KEY_LIVE",
+            "data": {
+
+            }
+        },
+        {
+
+            "range": [
+                170,
+                202
+            ],
+            "type": "message",
+            "ruleId": "@secretlint/secretlint-rule-stripe",
+            "ruleParentId": "@secretlint/secretlint-rule-preset-recommend",
+            "loc": {
+                "start": {
+                    "line": 8,
+                    "column": 0
+                },
+                "end": {
+                    "line": 8,
+                    "column": 32
+                }
+            },
+            "severity": "error",
+            "messageId": "STRIPE_SECRET_KEY_TEST",
+            "docsUrl": "https://github.com/secretlint/secretlint/blob/master/packages/%40secretlint/secretlint-rule-stripe/README.md#STRIPE_SECRET_KEY_TEST",
+            "data": {
+
+            }
+        },
+        {
+
+            "range": [
+                226,
+                258
+            ],
+            "type": "message",
+            "ruleId": "@secretlint/secretlint-rule-stripe",
+            "ruleParentId": "@secretlint/secretlint-rule-preset-recommend",
+            "loc": {
+                "start": {
+                    "line": 11,
+                    "column": 0
+                },
+                "end": {
+                    "line": 11,
+                    "column": 32
+                }
+            },
+            "severity": "error",
+            "messageId": "STRIPE_RESTRICTED_KEY_LIVE",
+            "docsUrl": "https://github.com/secretlint/secretlint/blob/master/packages/%40secretlint/secretlint-rule-stripe/README.md#STRIPE_RESTRICTED_KEY_LIVE",
+            "data": {
+
+            }
+        },
+        {
+
+            "range": [
+                282,
+                314
+            ],
+            "type": "message",
+            "ruleId": "@secretlint/secretlint-rule-stripe",
+            "ruleParentId": "@secretlint/secretlint-rule-preset-recommend",
+            "loc": {
+                "start": {
+                    "line": 14,
+                    "column": 0
+                },
+                "end": {
+                    "line": 14,
+                    "column": 32
+                }
+            },
+            "severity": "error",
+            "messageId": "STRIPE_RESTRICTED_KEY_TEST",
+            "docsUrl": "https://github.com/secretlint/secretlint/blob/master/packages/%40secretlint/secretlint-rule-stripe/README.md#STRIPE_RESTRICTED_KEY_TEST",
+            "data": {
+
+            }
+        }
+    ],
+
+    "sourceContentType": "text"
+}

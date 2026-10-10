@@ -1,0 +1,34 @@
+{
+    "filePath": "[SNAPSHOT]/ng.apikey/input.txt",
+    "messages": [
+        {
+
+            "range": [
+                0,
+                40
+            ],
+            "type": "message",
+            "ruleId": "@secretlint/secretlint-rule-github",
+            "ruleParentId": "@secretlint/secretlint-rule-preset-canary",
+            "loc": {
+                "start": {
+                    "line": 1,
+                    "column": 0
+                },
+                "end": {
+                    "line": 1,
+                    "column": 40
+                }
+            },
+            "severity": "error",
+            "messageId": "GITHUB_TOKEN",
+            "docsUrl": "https://github.com/secretlint/secretlint/blob/master/packages/%40secretlint/secretlint-rule-github/README.md#GITHUB_TOKEN",
+            "data": {
+
+                "typeName": "GitHub personal access tokens"
+            }
+        }
+    ],
+
+    "sourceContentType": "text"
+}

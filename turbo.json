@@ -1,0 +1,42 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "lib/**",
+        "module/**"
+      ]
+    },
+    "test": {
+      "dependsOn": [
+        "build"
+      ],
+      "outputs": [
+        "test/snapshots/**"
+      ],
+      "env": [
+        "UPDATE_SNAPSHOT"
+      ]
+    },
+    "updateSnapshot": {
+      "dependsOn": [
+        "build"
+      ],
+      "outputs": [
+        "test/snapshots/**"
+      ],
+      "env": [
+        "UPDATE_SNAPSHOT"
+      ]
+    },
+    "secretlint": {
+      "dependsOn": [
+        "build"
+      ],
+      "outputs": []
+    }
+  }
+}

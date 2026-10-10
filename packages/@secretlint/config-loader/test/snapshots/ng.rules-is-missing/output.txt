@@ -1,0 +1,9 @@
+secretlintrc should have required 'rules' property.
+            
+{
+    "rules": [
+        {
+            "id": "secretlint-rule-example"
+        }
+    ]
+}

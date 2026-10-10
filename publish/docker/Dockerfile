@@ -1,0 +1,27 @@
+FROM node:22-alpine
+
+LABEL maintainer="azu <azuciao@gmail.com>"
+LABEL description="Docker Container for secretlint"
+LABEL org.opencontainers.image.source="https://github.com/secretlint/secretlint"
+LABEL org.opencontainers.image.licenses="MIT"
+
+# DL3064 flags names containing "SECRET"; these are a version and a config path, not secrets.
+# hadolint ignore=DL3064
+ARG SECRETLINT_VERSION
+# hadolint ignore=DL3064
+ENV SECRETLINT_VERSION=${SECRETLINT_VERSION:-4.0.0}
+
+# hadolint ignore=DL3064
+ENV SECRETLINTRC=/.secretlintrc.json
+COPY .secretlintrc.json $SECRETLINTRC
+RUN npm install -g secretlint@${SECRETLINT_VERSION} \
+            @secretlint/secretlint-rule-preset-recommend@${SECRETLINT_VERSION} \
+            @secretlint/secretlint-rule-pattern@${SECRETLINT_VERSION} \
+            @secretlint/secretlint-formatter-sarif@${SECRETLINT_VERSION} && \
+    rm -rf /usr/share/man /tmp/* \
+           /root/.npm /root/.node-gyp \
+           /usr/lib/node_modules/npm/man \
+           /usr/lib/node_modules/npm/doc \
+           /usr/lib/node_modules/npm/html
+
+ENV PATH=/usr/lib/node_modules/.bin:$PATH

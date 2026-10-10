@@ -1,0 +1,82 @@
+{
+    "filePath": "[SNAPSHOT]/ng.secret/input.txt",
+    "messages": [
+        {
+
+            "range": [
+                98,
+                151
+            ],
+            "type": "message",
+            "ruleId": "@secretlint/secretlint-rule-cloudflare",
+            "loc": {
+                "start": {
+                    "line": 4,
+                    "column": 21
+                },
+                "end": {
+                    "line": 4,
+                    "column": 74
+                }
+            },
+            "severity": "error",
+            "messageId": "CLOUDFLARE_ACCOUNT_API_TOKEN",
+            "docsUrl": "https://github.com/secretlint/secretlint/blob/master/packages/%40secretlint/secretlint-rule-cloudflare/README.md#CLOUDFLARE_ACCOUNT_API_TOKEN",
+            "data": {
+
+            }
+        },
+        {
+
+            "range": [
+                178,
+                231
+            ],
+            "type": "message",
+            "ruleId": "@secretlint/secretlint-rule-cloudflare",
+            "loc": {
+                "start": {
+                    "line": 7,
+                    "column": 0
+                },
+                "end": {
+                    "line": 7,
+                    "column": 53
+                }
+            },
+            "severity": "error",
+            "messageId": "CLOUDFLARE_USER_API_TOKEN",
+            "docsUrl": "https://github.com/secretlint/secretlint/blob/master/packages/%40secretlint/secretlint-rule-cloudflare/README.md#CLOUDFLARE_USER_API_TOKEN",
+            "data": {
+
+            }
+        },
+        {
+
+            "range": [
+                257,
+                309
+            ],
+            "type": "message",
+            "ruleId": "@secretlint/secretlint-rule-cloudflare",
+            "loc": {
+                "start": {
+                    "line": 10,
+                    "column": 0
+                },
+                "end": {
+                    "line": 10,
+                    "column": 52
+                }
+            },
+            "severity": "error",
+            "messageId": "CLOUDFLARE_GLOBAL_API_KEY",
+            "docsUrl": "https://github.com/secretlint/secretlint/blob/master/packages/%40secretlint/secretlint-rule-cloudflare/README.md#CLOUDFLARE_GLOBAL_API_KEY",
+            "data": {
+
+            }
+        }
+    ],
+
+    "sourceContentType": "text"
+}

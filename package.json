@@ -1,0 +1,62 @@
+{
+  "private": true,
+  "name": "root",
+  "version": "13.0.7",
+  "description": "Pluggable linting tool to prevent commit secret/credential file.",
+  "type": "module",
+  "keywords": [
+    "secret",
+    "credential",
+    "lint",
+    "linting",
+    "git"
+  ],
+  "homepage": "https://github.com/secretlint/secretlint",
+  "bugs": {
+    "url": "https://github.com/secretlint/secretlint/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/secretlint/secretlint.git"
+  },
+  "license": "MIT",
+  "author": "azu",
+  "workspaces": [
+    "packages/*",
+    "packages/@secretlint/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "versionup": "echo 'Error: Please use CI for versioning. Run the GitHub Actions workflow instead.' && exit 1",
+    "release": "echo 'Error: Please use CI for releases. Run the GitHub Actions workflow instead.' && exit 1",
+    "build": "turbo run build",
+    "build:withoutrule": "turbo run build --ignore=\"packages/@secretlint/*-rule-*\"",
+    "updateSnapshot": "turbo run updateSnapshot",
+    "test": "turbo run test",
+    "lint": "secretlint \"**/*\"",
+    "ci": "turbo run build test secretlint",
+    "clean": "turbo run clean",
+    "prepare": "git config --local core.hooksPath .githooks",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\"",
+    "gen:rule": "scaffdog generate new-rule --output packages/ --answer \"owner:$(git config user.name)\" --answer \"version:$(node -e 'console.log(require(\"./package.json\").version)')\""
+  },
+  "devDependencies": {
+    "lint-staged": "catalog:",
+    "prettier": "catalog:",
+    "scaffdog": "catalog:",
+    "turbo": "catalog:",
+    "vitest": "catalog:"
+  },
+  "prettier": {
+    "singleQuote": false,
+    "printWidth": 120,
+    "tabWidth": 4,
+    "trailingComma": "none"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css}": [
+      "prettier --write --ignore-unknown"
+    ]
+  },
+  "packageManager": "pnpm@10.34.6+sha512.7e1ae66a83a9143c118cc1944f37cc4f2b8acddeda4b001cfa78908f6e46e45e15292739ca6c9d026426cc757e9318cc98c5551d6a16c165097b0028ba87b4e6"
+}
